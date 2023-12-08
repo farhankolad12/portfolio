@@ -1,12 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { lazyLoad } from "./utils/lazyLoad";
 import { Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-const Home = lazyLoad("../pages/Home.tsx");
-const Blogs = lazyLoad("../pages/Blogs.tsx");
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
