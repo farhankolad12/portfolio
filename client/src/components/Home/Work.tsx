@@ -8,28 +8,28 @@ const PROJECTS = [
     name: "Mutl-Vendor E-Commerce",
     description:
       "The challenge requires participants to build a functional E-commerce store with different access levels for Super Admins, Vendors, and end-users. The Super Admin dashboard allow monitoring of reviews, ratings, and orders, while vendors can add products, manage inventory and perform CRUD operations. End-users can view products, add them to the cart, and checkout. A reward system is implemented where users earn coins when they shop, and multiple discount campaigns should also be possible.",
-    img: "/src/assets/multi-vendor.png",
+    img: "/public/assets/multi-vendor.png",
     link: "https://github.com/farhankolad12/Spense-Challenge",
     tech: [
       {
         id: "4",
-        img: "/src/assets/bootstrap.png",
+        img: "/public/assets/bootstrap.png",
       },
       {
         id: "5",
-        img: "/src/assets/mongodb.webp",
+        img: "/public/assets/mongodb.webp",
       },
       {
         id: "6",
-        img: "/src/assets/express.png",
+        img: "/public/assets/express.png",
       },
       {
         id: "7",
-        img: "/src/assets/react.png",
+        img: "/public/assets/react.png",
       },
       {
         id: "8",
-        img: "/src/assets/node.jpeg",
+        img: "/public/assets/node.jpeg",
       },
     ],
   },
@@ -39,20 +39,20 @@ const PROJECTS = [
     name: "Movie App",
     description:
       "A app with authentication feature and user can save their favorites movies/shows. List of all the saved items will be visible in bookmark page from there user can remove movies/shows from the list.",
-    img: "/src/assets/entertainment.png",
+    img: "/public/assets/entertainment.png",
     link: "https://github.com/farhankolad12/Entertainment-App",
     tech: [
       {
         id: "4",
-        img: "/src/assets/bootstrap.png",
+        img: "/public/assets/bootstrap.png",
       },
       {
         id: "7",
-        img: "/src/assets/react.png",
+        img: "/public/assets/react.png",
       },
       {
         id: "9",
-        img: "/src/assets/firebase.webp",
+        img: "/public/assets/firebase.webp",
       },
     ],
   },
@@ -62,20 +62,20 @@ const PROJECTS = [
     name: "Farhanogram",
     description:
       "A simple social media app where user can post their photos with a caption. Other users can comment and like on posts. Users can follow each other profiles. Last but not least people can chat with each other.",
-    img: "/src/assets/farhanogram.png",
+    img: "/public/assets/farhanogram.png",
     link: "https://github.com/farhankolad12/Social-Media-App",
     tech: [
       {
         id: "4",
-        img: "/src/assets/bootstrap.png",
+        img: "/public/assets/bootstrap.png",
       },
       {
         id: "7",
-        img: "/src/assets/react.png",
+        img: "/public/assets/react.png",
       },
       {
         id: "9",
-        img: "/src/assets/firebase.webp",
+        img: "/public/assets/firebase.webp",
       },
     ],
   },
@@ -85,32 +85,32 @@ const PROJECTS = [
     name: "Social Blend (Under Development)",
     description:
       "Social Blend is a marketplace to find and hire influencers on Instagram, TikTok, and YouTube. You can easily search through thousands of content creators and pay them directly through Social Blend. Influencer Marketing Made Easy. Find and hire top Instagram, YouTube, and UGC influencers to create unique content for your brand. It is a marketplace where influencer will sell their services and brand will hire them to do their marketing, like post stories, creating a video of brand products.",
-    img: "/src/assets/social-blend.png",
+    img: "/public/assets/social-blend.png",
     link: "https://social-blend-farhan.onrender.com/",
     tech: [
       {
         id: "4",
-        img: "/src/assets/bootstrap.png",
+        img: "/public/assets/bootstrap.png",
       },
       {
         id: "5",
-        img: "/src/assets/mongodb.webp",
+        img: "/public/assets/mongodb.webp",
       },
       {
         id: "6",
-        img: "/src/assets/express.png",
+        img: "/public/assets/express.png",
       },
       {
         id: "7",
-        img: "/src/assets/react.png",
+        img: "/public/assets/react.png",
       },
       {
         id: "8",
-        img: "/src/assets/node.jpeg",
+        img: "/public/assets/node.jpeg",
       },
       {
         id: "10",
-        img: "/src/assets/socketio.svg",
+        img: "/public/assets/socketio.svg",
       },
     ],
   },
@@ -120,20 +120,20 @@ const PROJECTS = [
     name: "Golden Art Service",
     description:
       "An e-commerce website with a admin panel to add products, manage orders and reviews. This is a simple e-commerce website where user can buy products directly from the seller.",
-    img: "/src/assets/e-commerce.png",
+    img: "/public/assets/e-commerce.png",
     link: "https://e-commerce-17b25.web.app/",
     tech: [
       {
         id: "4",
-        img: "/src/assets/bootstrap.png",
+        img: "/public/assets/bootstrap.png",
       },
       {
         id: "7",
-        img: "/src/assets/react.png",
+        img: "/public/assets/react.png",
       },
       {
         id: "9",
-        img: "/src/assets/firebase.webp",
+        img: "/public/assets/firebase.webp",
       },
     ],
   },
@@ -165,7 +165,7 @@ export default function Work() {
                         key={tech.id}
                         width="25px"
                         height="25px"
-                        src={`http://127.0.0.1:5173${tech.img}`}
+                        src={tech.img}
                         alt={tech.id}
                       />
                     );
@@ -182,12 +182,7 @@ export default function Work() {
                 </Link>
               </div>
               <div className="w-100 mt-3">
-                <img
-                  src={`http://127.0.0.1:5173/${project.img}`}
-                  alt="img"
-                  width="100%"
-                  height="100%"
-                />
+                <img src={project.img} alt="img" width="100%" height="100%" />
               </div>
             </div>
           );

@@ -9,7 +9,7 @@ export default function Footer() {
             className="mb-3 mb-md-0 text-body-secondary text-decoration-none lh-1 fs-2"
             to="/"
           >
-            <img src="/src/assets/logo.png" alt="Logo" className="logo" />
+            <img src="/public/assets/logo.png" alt="Logo" className="logo" />
           </Link>
         </div>
 

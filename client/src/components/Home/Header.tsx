@@ -1,39 +1,39 @@
 const TECHNOLOGIES = [
   {
     id: "1",
-    img: "/src/assets/html.png",
+    img: "html.png",
   },
   {
     id: "2",
-    img: "/src/assets/css.png",
+    img: "css.png",
   },
   {
     id: "3",
-    img: "/src/assets/javascript.png",
+    img: "javascript.png",
   },
   {
     id: "4",
-    img: "/src/assets/bootstrap.png",
+    img: "bootstrap.png",
   },
   {
     id: "5",
-    img: "/src/assets/mongodb.webp",
+    img: "mongodb.webp",
   },
   {
     id: "6",
-    img: "/src/assets/express.png",
+    img: "express.png",
   },
   {
     id: "7",
-    img: "/src/assets/react.png",
+    img: "react.png",
   },
   {
     id: "8",
-    img: "/src/assets/node.jpeg",
+    img: "node.jpeg",
   },
   {
     id: "9",
-    img: "/src/assets/firebase.webp",
+    img: "firebase.webp",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Header() {
               key={tech.id}
               width="40px"
               height="40px"
-              src={`http://127.0.0.1:5173/${tech.img}`}
+              src={`/public/assets/${tech.img}`}
               alt={tech.id}
             />
           );

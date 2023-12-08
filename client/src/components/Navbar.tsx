@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import resume from "../assets/resume_farhan_kolad.pdf";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid mx-3">
         <Link className="navbar-brand fs-1" to="/">
-          <img src="/src/assets/logo.png" alt="Logo" className="logo" />
+          <img src="/public/assets/logo.png" alt="Logo" className="logo" />
         </Link>
         <button
           className="navbar-toggler"
@@ -38,7 +37,7 @@ export default function Navbar() {
                 download="Resume-Farhan"
                 target="_blank"
                 rel="noreferrer"
-                to={resume}
+                to="/public/assets/resume_farhan_kolad.pdf"
               >
                 Resume
               </Link>
