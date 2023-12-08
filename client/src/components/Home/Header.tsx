@@ -61,7 +61,7 @@ export default function Header() {
               key={tech.id}
               width="40px"
               height="40px"
-              src={`/public/assets/${tech.img}`}
+              src={`/assets/${tech.img}`}
               alt={tech.id}
             />
           );
