@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid mx-3">
         <Link className="navbar-brand fs-1" to="/">
-          <img src="/public/assets/logo.png" alt="Logo" className="logo" />
+          <img src="/assets/logo.png" alt="Logo" className="logo" />
         </Link>
         <button
           className="navbar-toggler"
