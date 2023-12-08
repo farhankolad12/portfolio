@@ -37,7 +37,7 @@ export default function Navbar() {
                 download="Resume-Farhan"
                 target="_blank"
                 rel="noreferrer"
-                to="/public/assets/resume_farhan_kolad.pdf"
+                to="/assets/resume_farhan_kolad.pdf"
               >
                 Resume
               </Link>
