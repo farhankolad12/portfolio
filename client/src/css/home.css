@@ -1,0 +1,38 @@
+.main-sec.header {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-sec.work {
+  margin: 10rem auto 5rem auto;
+}
+
+.main-sec .name-head {
+  font-size: 4rem;
+}
+
+.main-sec .desc-head {
+  padding: 0 25rem 0 25rem;
+}
+
+.main-sec .highlight-color {
+  color: rgb(107 114 128 /1);
+}
+
+@media (max-width: 1000px) {
+  .main-sec .desc-head {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .main-sec .name-head {
+    font-size: 1.9rem;
+  }
+
+  .main-sec.header {
+    height: 45rem;
+  }
+}
