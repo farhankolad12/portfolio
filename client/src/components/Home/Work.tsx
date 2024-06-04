@@ -5,6 +5,37 @@ const PROJECTS = [
   {
     id: Math.floor(Math.random() * 999),
     industry: "E-Commerce",
+    name: "Essentials By LA (E-Commerce)",
+    description:
+      "I developed a bespoke E-commerce website for a client, leveraging a robust technology stack that includes NextJS, MongoDB, ExpressJS, NodeJS, and TailwindCSS. This project highlights my full-stack development skills and my ability to deliver scalable, user-friendly, and high-performance web applications tailored to client needs.",
+    img: "/assets/e-commerce-client.png",
+    link: "https://github.com/farhankolad12/Custom-Clothing-Store",
+    tech: [
+      {
+        id: "4",
+        img: "/assets/tailwind.png",
+      },
+      {
+        id: "5",
+        img: "/assets/mongodb.webp",
+      },
+      {
+        id: "6",
+        img: "/assets/express.png",
+      },
+      {
+        id: "7",
+        img: "/assets/next-js.png",
+      },
+      {
+        id: "8",
+        img: "/assets/node.jpeg",
+      },
+    ],
+  },
+  {
+    id: Math.floor(Math.random() * 999),
+    industry: "E-Commerce",
     name: "Mutl-Vendor E-Commerce",
     description:
       "The challenge requires participants to build a functional E-commerce store with different access levels for Super Admins, Vendors, and end-users. The Super Admin dashboard allow monitoring of reviews, ratings, and orders, while vendors can add products, manage inventory and perform CRUD operations. End-users can view products, add them to the cart, and checkout. A reward system is implemented where users earn coins when they shop, and multiple discount campaigns should also be possible.",

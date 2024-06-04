@@ -16,6 +16,10 @@ const TECHNOLOGIES = [
     img: "bootstrap.png",
   },
   {
+    id: "10",
+    img: "tailwind.png",
+  },
+  {
     id: "5",
     img: "mongodb.webp",
   },
@@ -26,6 +30,10 @@ const TECHNOLOGIES = [
   {
     id: "7",
     img: "react.png",
+  },
+  {
+    id: "11",
+    img: "next-js.png",
   },
   {
     id: "8",
