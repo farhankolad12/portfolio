@@ -30,20 +30,20 @@ export default function Blogs() {
           <span>
             I try to put my learnings into an article here to spread it further.
           </span>
-          <div
-            style={{ display: "grid", gridTemplateColumns: "repeat(1fr, 3)" }}
-            className="mt-5 border-top py-5 blogs"
-          >
-            {loading ? (
-              "loading"
-            ) : blogs.length ? (
-              blogs.map((blog: BlogType) => {
+          {loading ? (
+            <h3 className="text-center mt-5">Loading...</h3>
+          ) : blogs?.length ? (
+            <div
+              style={{ display: "grid", gridTemplateColumns: "repeat(1fr, 3)" }}
+              className="mt-5 border-top py-5 blogs"
+            >
+              {blogs.map((blog: BlogType) => {
                 return <Blog key={blog._id} blog={blog} />;
-              })
-            ) : (
-              <h3 className="text-center">No blogs</h3>
-            )}
-          </div>
+              })}
+            </div>
+          ) : (
+            <h3 className="text-center mt-5">No blogs found</h3>
+          )}
         </div>
       </div>
     </>

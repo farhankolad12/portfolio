@@ -71,13 +71,16 @@ export default function Header() {
         Currently, looking forward to pursue a next level in website
         development.
       </p>
-      <div className="d-flex justify-content-center flex-wrap gap-4 mt-4">
+      <div className="d-flex justify-content-center flex-wrap gap-3 mt-4">
         {TECHNOLOGIES.map((tech: TECHTYPE) => {
           return (
             <img
               key={tech.id}
-              width="40px"
-              height="40px"
+              width="50px"
+              height="50px"
+              style={{
+                objectFit: "contain",
+              }}
               src={`/assets/${tech.img}`}
               alt={tech.id}
             />
