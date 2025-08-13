@@ -36,7 +36,7 @@ export default function Blogs() {
           >
             {loading ? (
               "loading"
-            ) : blogs ? (
+            ) : blogs.length ? (
               blogs.map((blog: BlogType) => {
                 return <Blog key={blog._id} blog={blog} />;
               })
