@@ -43,6 +43,14 @@ const TECHNOLOGIES = [
     id: "9",
     img: "firebase.webp",
   },
+  {
+    id: "12",
+    img: "socket-io.png",
+  },
+  {
+    id: "13",
+    img: "typescript.png",
+  },
 ];
 
 export type TECHTYPE = {
@@ -58,9 +66,10 @@ export default function Header() {
         Website Developer
       </h1>
       <p className="fs-5 lh-base my-3 desc-head">
-        I'm a full stack developer with 2+ years of experience in MERN Stack. I
-        have also created website using ReactJS, NodeJS and MongoDB. Currently,
-        looking forward to pursue a next level in website development.
+        I'm a full stack developer with 3+ years of experience in MERN Stack and
+        NextJS. I have also created website using ReactJS, NodeJS and MongoDB.
+        Currently, looking forward to pursue a next level in website
+        development.
       </p>
       <div className="d-flex justify-content-center flex-wrap gap-4 mt-4">
         {TECHNOLOGIES.map((tech: TECHTYPE) => {
